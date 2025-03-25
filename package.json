@@ -1,12 +1,31 @@
 {
   "name": "redis-sliding-rate-limiter",
   "version": "1.0.0",
+  "description": "A Redis-based sliding rate limiter for Node.js applications",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "ts-node src/test/test.ts",
-    "start": "node dist/test/test.js"
+    "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "rate limiter",
+    "redis",
+    "nodejs",
+    "grpc",
+    "typescript"
+  ],
+  "author": "Lalit Sunar <laalit.sunaar@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesterlalit/redis-sliding-rate-limiter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codesterlalit/redis-sliding-rate-limiter/issues"
+  },
+  "homepage": "https://github.com/codesterlalit/redis-sliding-rate-limiter#readme",
   "dependencies": {
     "redis": "^4.6.5"
   },
@@ -15,5 +34,9 @@
     "@types/redis": "^4.0.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ]
 }
