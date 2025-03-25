@@ -1,0 +1,5 @@
+### 4. Publish to npm
+
+1. Build your package:
+```bash
+npm run build
